@@ -1,24 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
+import NoUseCallback from './useCallback/noUseCallback';
+import UseCallback from './useCallback/useCallback';
+import NoUseMemo from './useMemo/noUseMemo';
+import UseMemo from './useMemo/UseMemo';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    {/* <NoUseCallback/> */}
+    {/* <UseCallback/> */}
+
+    {/* <NoUseMemo/> */}
+    <UseMemo/>
+    </>
   );
 }
 
